@@ -6,3 +6,5 @@
 + PostList  (The list of all our recent posts)
 + Post  (The view of a single post)
 + Input (This component allows us to create a new post)
+
+[Next step](https://github.com/sgonzalezml/workshop-react/tree/v3)
