@@ -1,19 +1,8 @@
-## Installing node & npm
+## Component hierarchy
 ---
-1. Install node 7.2.1
-2. Install the latest version of npm
-```bash
-    npm install npm@latest -g
-```
-3. Check that npm version is higher than 5
-```bash
-    npm --version
-```
-## Initializing project
----
-```bash
-    npm install
-```
-## Introducing React
----
-1. In client.js file, lets create our first react component (which is going to be our App container)
+1. Create a components folder in /js directory
+2. Now let's create our components
++ App   (The container of the entire application)
++ PostList  (The list of all our recent posts)
++ Post  (The view of a single post)
++ Input (This component allows us to create a new post)
