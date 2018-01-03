@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-
-class App extends Component {
-    render() {
-        return (<div>Woooorks !!!</div>);
-    }
-}
+import PostList from './components/Postlist'
 
 const app = document.getElementById('app');
-ReactDOM.render(<App/>, app);
+ReactDOM.render(<PostList/>, app);
