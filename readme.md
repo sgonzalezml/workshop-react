@@ -3,7 +3,7 @@
     1. Install node 7.2.1
     2. Install the latest version of npm
 ```bash
-    npm install npm@latest -galert(s);
+    npm install npm@latest -g
 ```
     3. Check that npm version is higher than 5
 ```bash
