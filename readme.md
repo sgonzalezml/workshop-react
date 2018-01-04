@@ -9,8 +9,7 @@ import ReactDOM from 'react-dom';
 
 export default class App extends Component {
     render() {
-        return (<div>
-        </div>);
+        return (<div></div>);
     }
 }
 ```
@@ -21,8 +20,7 @@ import ReactDOM from 'react-dom';
 
 export default class PostList extends Component {
     render() {
-        return (<div className="postList">
-        </div>);
+        return (<div className="postList"></div>);
     }
 }
 ```
@@ -106,7 +104,7 @@ export default class App extends Component {
     }
 }
 ```
-4. In our PostList component we are going to add a Post, with hardcoded values, just for demonstrative purpose, and check that everything is working correctly.
+4. In our PostList component we are going to add a Post, with hardcoded values, just for demostrative purpose, and check that everything is working correctly.
 ```jsx
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
