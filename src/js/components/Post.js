@@ -12,8 +12,9 @@ export default class Post extends Component {
     renderBody() {
         if (this.state.expanded === true) {
             return (
-                <div className="description">
-                    {this.props.description}
+                <div className="card-body">
+                    <h5 className="card-title">{this.props.title}</h5>
+                    <p className="card-text description">{this.props.description}</p>
                 </div>
             );
         }
@@ -21,11 +22,10 @@ export default class Post extends Component {
     }
 
     render() {
-        return (<div className="post">
-            <div className="title">{this.props.title}</div>
-            <div>
-                <span className="author">{this.props.author}</span>
-                <span className="date">{this.props.date}</span>
+        return (<div className="card bg-light mb-3">
+            <div className="card-header">
+                <p className="author">{this.props.author}</p>
+                <p className="date">{this.props.date}</p>
             </div>
             {this.renderBody()}
         </div>);
