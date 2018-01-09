@@ -17,3 +17,16 @@
 ## Introducing React
 ---
 1. In client.js file, lets create our first react component (which is going to be our App container)
+```jsx
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+
+class App extends Component {
+    render() {
+        return (<div>App</div>);
+    }
+}
+
+const app = document.getElementById('app');
+ReactDOM.render(<App/>, app);
+```
