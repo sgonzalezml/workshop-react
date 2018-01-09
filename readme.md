@@ -30,3 +30,5 @@ class App extends Component {
 const app = document.getElementById('app');
 ReactDOM.render(<App/>, app);
 ```
+
+[Next step](https://github.com/sgonzalezml/workshop-react/tree/v2)
