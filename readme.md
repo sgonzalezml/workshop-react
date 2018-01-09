@@ -126,7 +126,7 @@ export default class PostList extends Component {
 ```
 5. Now we are going to add the “create post” functionality to our input component, lets use axios for that purpose.
 
-6. And finally our client.js file we are going to render our app
+6. And finally in our client.js file we are going to render our app
 ```jsx
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
