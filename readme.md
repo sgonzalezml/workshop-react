@@ -88,7 +88,7 @@ export default class Input extends Component {
     }
 }
 ```
-3. In our App component we are going to add one PostList and one Input component to simulate our post.
+3. In our App component we are going to add one PostList and one Input component.
 ```jsx
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
