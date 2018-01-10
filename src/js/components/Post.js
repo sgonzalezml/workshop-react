@@ -9,10 +9,14 @@ export default class Post extends Component {
         };
     }
 
+    toggleExpanded() {
+        this.setState({ expanded: !this.state.expanded });
+    }
+
     renderDetails() {
         if (this.state.expanded === true) {
             return (
-                <div className="card-body">
+                <div className="card-body" onClick={this.toggleExpanded}>
                     <h5 className="card-title">{this.props.title}</h5>
                     <p className="card-text description">{this.props.description}</p>
                 </div>
