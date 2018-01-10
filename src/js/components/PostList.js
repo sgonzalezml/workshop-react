@@ -8,7 +8,7 @@ export default class PostList extends Component {
             <Post
                 author={'yo'}
                 title={'title'}
-                description={'hola yo soy un post'}
+                description={'descripcion del post'}
                 date={'22/04/67'}
                 id={1}
             />

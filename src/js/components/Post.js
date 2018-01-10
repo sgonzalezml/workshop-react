@@ -9,7 +9,7 @@ export default class Post extends Component {
         };
     }
 
-    renderBody() {
+    renderDetails() {
         if (this.state.expanded === true) {
             return (
                 <div className="card-body">
@@ -27,7 +27,7 @@ export default class Post extends Component {
                 <p className="author">{this.props.author}</p>
                 <p className="date">{this.props.date}</p>
             </div>
-            {this.renderBody()}
+            {this.renderDetails()}
         </div>);
     }
 }
