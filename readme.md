@@ -1,6 +1,5 @@
 ## Fetching data - Unidirectional data flow
 ---
-
 Now we are going to get all our posts from the server.
 1. Open the App component
 2. Lifecycles, fetch data on componentDidMount? why ?
