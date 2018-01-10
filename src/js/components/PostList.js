@@ -30,7 +30,7 @@ export default class PostList extends Component {
                 return (<Post
                     author={post.author}
                     title={post.title}
-                    description={post.description}
+                    description={post.desc}
                     date={post.date}
                     id={post.id}
                     key={post.id}
