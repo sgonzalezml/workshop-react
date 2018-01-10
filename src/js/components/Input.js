@@ -19,7 +19,7 @@ export default class Input extends Component {
                     <input type="textarea" placeholder="Descripcion" className="form-control input-desc" aria-label="Descripcion" aria-describedby="inputGroup-sizing-default"/>
                 </div>
             </div>
-            <button type="button" class="btn btn-secondary">Post!</button>
+            <button type="button" className="btn btn-secondary">Post!</button>
         </div>);
     }
 }
