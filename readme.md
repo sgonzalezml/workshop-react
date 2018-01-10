@@ -35,6 +35,7 @@ export default class Post extends Component {
         this.state = {
             expanded: false
         };
+        this.toggleExpanded = this.toggleExpanded.bind(this);
     }
 
     toggleExpanded() {
