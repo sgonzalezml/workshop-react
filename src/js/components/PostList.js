@@ -3,15 +3,31 @@ import ReactDOM from 'react-dom';
 import Post from './Post';
 
 export default class PostList extends Component {
+    constructor() {
+        super();
+        this.state = {
+            posts: []
+        }
+    }
+    componentWillMount() {
+        console.log('comopnentWillMount');
+    }
+
+    componentDidMount() {
+        console.log('comopnentDidMount');
+    }
+
     render() {
         return (<div className="postList">
-            <Post
-                author={'yo'}
-                title={'title'}
-                description={'descripcion del post'}
-                date={'22/04/67'}
-                id={1}
-            />
+            {this.state.posts.map( (post) => {
+                <Post
+                    author={post.author}
+                    title={post.title}
+                    description={post.description}
+                    date={post.date}
+                    id={post.id}
+                />
+            } )}
         </div>);
     }
 }
