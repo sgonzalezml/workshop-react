@@ -37,7 +37,7 @@ export default class Post extends Component {
         };
     }
 
-    renderBody() {
+    renderDescription() {
         if (this.state.expanded === true) {
             return (
                 <div className="card-body">
@@ -55,7 +55,7 @@ export default class Post extends Component {
                 <p className="author">{this.props.author}</p>
                 <p className="date">{this.props.date}</p>
             </div>
-            {this.renderBody()}
+            {this.renderDescription()}
         </div>);
     }
 }
@@ -116,7 +116,7 @@ export default class PostList extends Component {
             <Post
                 author={'yo'}
                 title={'title'}
-                description={'hola yo soy un post'}
+                description={'descripcion del post'}
                 date={'22/04/67'}
                 id={1}
             />
@@ -124,9 +124,8 @@ export default class PostList extends Component {
     }
 }
 ```
-5. Now we are going to add the “create post” functionality to our input component, lets use axios for that purpose.
 
-6. And finally in our client.js file we are going to render our app
+5. And finally in our client.js file we are going to render our app
 ```jsx
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
