@@ -9,6 +9,7 @@ export default class PostList extends Component {
         this.state = {
             posts: []
         }
+        this.addPost = this.addPost.bind(this);
     }
     componentWillMount() {
         console.log('comopnentWillMount');
@@ -22,6 +23,12 @@ export default class PostList extends Component {
         .catch((error) => {
             console.log('error', error);
         })
+    }
+
+    addPost(newPost) {
+        const posts = this.state.posts;
+        posts.push(newPost);
+        this.setState(posts);
     }
 
     render() {
