@@ -58,6 +58,11 @@ onChange={ (e) => { this.handleChange('title', e.target.value) } }
     }
 ```
 
-5. When the post is done succefully, the new post is returned with its id and date. We can see it in the console.
+5. When the post is done succefully, the new post is returned with its ID and date. We can see it in the console.
+
+6. Now that we have the new post in our hands, we could add it dynamically to ours postList..
++ In the PostList component, which is holding the posts array, lets make a method to add a new one.
+
+
 
 [Next step](https://github.com/sgonzalezml/workshop-react/tree/v5)
