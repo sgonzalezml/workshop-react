@@ -21,7 +21,7 @@ $ npm install prop-types --save
 + At the bottom of the file, outside of the class definition, we are going to declare the component propTypes like this:
 ```jsx
     Input.propTypes = {
-        addPost: PropTypes.stirng.isRequired
+        addPost: PropTypes.string.isRequired
     }
 ```
 + Open the console in the browser, see the warning ?
@@ -29,7 +29,7 @@ Thats because addPost is NOT a `STRING`, its a `FUNCION`
 
 Replace
 ```jsx
-    addPost: PropTypes.stirng.isRequired
+    addPost: PropTypes.string.isRequired
 ```
 For
 ```jsx
