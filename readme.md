@@ -1,4 +1,4 @@
-#React Workshop
+# React Workshop
 
 ## Installing node & npm
 ---
@@ -389,5 +389,5 @@ For
 addPost: PropTypes.func.isRequired
 ```
 
-# Hope yo enjoyed
+# Hope you enjoyed
 
