@@ -1,5 +1,49 @@
 .container {
-    height: 100%;
-    background-color: orangered;
     font-family: 'Helvetica';
+}
+
+.postList {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.post {
+    padding: 15px;
+}
+
+.input {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+textarea {
+    box-sizing: border-box;
+    border: 1px solid #aaa;
+    box-shadow: 1px 2px 2px rgba(204,204,204,.3) inset;
+    margin-top: 2px;
+    padding: 6px;
+    resize: none;
+    outline: none;
+    vertical-align: top;
+    line-height: 1.21;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.input-author {
+    width: 20%;
+    vertical-align: middle;
+}
+
+.input-title {
+    vertical-align: middle;
+    width: 30%;
+}
+
+.input-desc {
+    width: 80%;
+    height: 50px;
 }
