@@ -61,8 +61,40 @@ onChange={ (e) => { this.handleChange('title', e.target.value) } }
 5. When the post is done succefully, the new post is returned with its ID and date. We can see it in the console.
 
 6. Now that we have the new post in our hands, we could add it dynamically to ours postList..
-+ In the PostList component, which is holding the posts array, lets make a method to add a new one.
-
++ In the App component, which is holding the posts array, lets make a method to add a new one.
+```jsx
+    addPost(newPost) {
+        const posts = this.state.posts;
+        posts.push(newPost);
+        this.setState(posts);
+    }
+```
++ And bind the context in the constructor
+```jsx
+    this.addPost = this.addPost.bind(this);
+```
++ But that function needs to be called where the new post ir arriving, the Input component
+    > So the Input component should call that function when needed, in the API post callback.
+    >
+    > How could the Input component call a parents function ? Yes.... props.
+```jsx
+    <Input addPost={this.addPost} />
+```
++ And Input component post callback looks like this:
+```jsx
+    createPost() {
+        const body = {
+            title: this.state.title,
+            author: this.state.author,
+            desc: this.state.desc
+        };
+        Axios.post('http://localhost:3000/posts', body)
+        .then((res) => {
+            console.log(res);
+            this.props.addPost(res);
+        })
+    }
+```
 
 
 [Next step](https://github.com/sgonzalezml/workshop-react/tree/v5)
