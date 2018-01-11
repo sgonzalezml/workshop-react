@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Axios from 'axios';
+import PropTypes from 'prop-types';
 
 export default class Input extends Component {
     constructor() {
@@ -51,4 +52,8 @@ export default class Input extends Component {
             <button onClick={this.createPost} type="button" className="btn btn-secondary">Post!</button>
         </div>);
     }
+}
+
+Input.propTypes = {
+    addPost: PropTypes.func.isRequired
 }
