@@ -27,6 +27,7 @@ export default class Input extends Component {
         Axios.post('http://localhost:3000/posts', body)
         .then((res) => {
             console.log(res);
+            this.props.addPost(res.data);
         })
     }
 
