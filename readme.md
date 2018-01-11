@@ -35,3 +35,5 @@ For
 ```jsx
     addPost: PropTypes.func.isRequired
 ```
+
+[Next step](https://github.com/sgonzalezml/workshop-react/tree/v6)
