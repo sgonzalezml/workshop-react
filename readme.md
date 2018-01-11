@@ -31,11 +31,12 @@ return (<div>App</div>);
 
 const app = document.getElementById('app');
 ReactDOM.render(<App/>, app);
+```
 
 ## Component hierarchy
 ---
 1. Create a components folder in /js directory
-2. Now let's create our components
+2. Now lets create our components
 + App (The container of the entire application)
 ```jsx
     import React, { Component } from 'react';
